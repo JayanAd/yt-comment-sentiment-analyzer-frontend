@@ -3,9 +3,9 @@ document.getElementById("sendRequest").addEventListener("click", async()=>{
 
     try{
         const response = await fetch("http://localhost:5000/predict",{
-            metod:"POST",
+            method:"POST",
             headers:{
-                "Content-type":"application/json"
+                "Content-Type":"application/json"
             },
             body: JSON.stringify({comments:[randomText]})
         });
@@ -15,6 +15,6 @@ document.getElementById("sendRequest").addEventListener("click", async()=>{
         document.getElementById("response").innerText = JSON.stringify(result);
     
     }catch(error){
-        console.error("Error: ",error)
+        console.error("Error: ",error);
     }
 });
