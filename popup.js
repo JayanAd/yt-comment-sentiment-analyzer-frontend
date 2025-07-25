@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
   const outputDiv = document.getElementById("output");
-  const API_KEY = 'AIzaSyDO2XqK2pPpYtkgJLBnIdWG5SDdAaRdcLY';  
+  const API_KEY = '';  
   const API_URL = 'http://my-elb-2062136355.us-east-1.elb.amazonaws.com:80';
 
   // Get the current tab's URL
